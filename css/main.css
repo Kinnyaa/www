@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/fonts/TTLakes-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-family: 'TT Lakes', sans-serif;
+    font-weight: 400;
+    background-color: #F8F8F8;
+}
+
+.container {
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    }
+.header__left,
+.header__right{
+ display: flex;
+ align-items: center;
+ gap: 15px;
+}
+.service__titile__right {
+    display: none;
+}
+.slidemenu.dekstop{
+    display: none;
+}
+.slidemenu.active.dekstop {
+    display: none;
+} 
+.dekstop {
+    display: none;
+}
+.extra {
+    display: none;
+}
+.tablet {
+    display: none;
+}
+
+.service__titile__left {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+    font-weight: 700;
+}
+
+.buttons {
+  font-family: 'TT Lakes', sans-serif;
+  font-weight: 400;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.buttons__top {
+height: 24px;
+  width: 220px;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 40px;
+  gap: 55px;
+}
+
+.buttons__bottom {
+  display: none;
+}
+
+.slidemenu {
+  padding: 6px 14px;
+  display: flex;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: auto;
+  height: 44px;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  background-color: #F8F8F8;
+  color: #7d7d83;
+  transition: 0.2s ease;
+}
+
+.slidemenu.active {
+  border-color: #9fffe7;
+  background: #fff;
+}
+.tabs__wrapper {
+    position: relative;
+    overflow: visible;
+    padding: 0 15px;
+}
+
+.tabs__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 48px;
+  height: 100%;
+  pointer-events: none;
+
+   background: linear-gradient(
+    to left,
+    #f8f8f8 0%,
+    rgba(248, 248, 248, 0) 100%
+  );
+}
+.slidemenu.active {
+  border-color: #9fffe7;
+  background: #fff;
+}
+.slidemenu:hover {
+  background-color: #f3fffb;
+  border-color: #6fffd8;
+}
+
+.slidemenu:active {
+  transform: scale(0.98);
+}
+
+.wapper {
+    margin-top: 15px;
+    
+    box-sizing: border-box;
+}
+
+
+.container__wapper__text p { 
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.listen__nav {
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+}
+.container__wapper_img {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/** ПЛАНШЕТ **/
+
+@media (min-width: 768px) {
+.extra {
+    display: flex;
+}
+.tablet {
+    display: flex; }
+.wapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+.container__wapper__text {
+    flex: 1 1 0;
+}
+.container__wapper_img {
+    flex: 1 1 0;
+}
+.container__wapper_img img{
+    border-radius: 8px;
+    width: 100%;
+    display: block;
+}
+}
+
+/* КОМПУТЕР */
+
+@media (min-width: 1120px) {
+.container {
+    display: none;
+}
+.slidemenu.all{
+    display: none;
+}
+.slidemenu.dekstop{
+    display: flex;
+}
+.slidemenu.active{
+    display: none;
+}
+.slidemenu.active.dekstop {
+    display: flex;
+} 
+.extra {
+    display: none;
+}
+.dekstop{
+    display: flex;
+}
+.buttons__bottom {
+  display: flex;
+}
+.servicetitile__right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.service__title    {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    }
+.service__title__left,
+.service__titile__right{
+ display: flex;
+ align-items: center;
+ gap: 15px;
+}
+.service__titile__right{
+    margin-top: 15px;
+    padding-right: 15px;
+}
+}
+
