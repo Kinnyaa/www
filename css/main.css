@@ -86,8 +86,6 @@ body {
 }
 
 .buttons__top {
-height: 24px;
-  width: 220px;
   font-size: 16px;
   display: flex;
   flex-wrap: nowrap;
@@ -174,7 +172,7 @@ height: 24px;
     gap: 10px;
     font-weight: 500;
 }
-.container__wapper_img {
+.container__wapper__img {
   overflow: hidden;
   width: 100%;
   height: auto;
@@ -201,10 +199,10 @@ height: 24px;
 .container__wapper__text {
     flex: 1 1 0;
 }
-.container__wapper_img {
+.container__wapper__img {
     flex: 1 1 0;
 }
-.container__wapper_img img{
+.container__wapper__img img{
     border-radius: 8px;
     width: 100%;
     display: block;
@@ -238,7 +236,7 @@ height: 24px;
 .buttons__bottom {
   display: flex;
 }
-.servicetitile__right{
+.service__titile__right{
     display: flex;
     align-items: center;
     gap: 15px;
